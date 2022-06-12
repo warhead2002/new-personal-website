@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-size:110%;
+    margin: 0%;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Merriweather', serif;
+  }
+
+h3:hover{
+    text-decoration:underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}  
+
+#Intro{
+    width: 100%;
+    height: 100vh;
+    border: 3px solid green;
+    padding: 35vh;
+    text-align: center;
+    background-image: url('alive_cat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Intro h1:hover{
+    font-size: larger;
+    color: blue;
+}
+
+#Skills{
+    text-align: center;
+    padding: 20vh;
+    height: 100vh;
+    border: 3px solid blue;
+}
+#Skills .Gallery{
+    display: flex;
+}
+
+#Skills .Gallery .Element{
+    border: 2px solid;
+    flex-grow: 1 1 0px;
+    margin: 7px;
+}
+/* #Skills .Gallery .Element   :hover{
+    color:rgb(39, 39, 239);
+} */
+
+#Skills .Gallery a{
+    font-size: 100%;
+}
+#Skills .Gallery a1{
+    font-size: 80%;
+}
+h3{
+    font-size: 120%;
+}
+#Experience{
+    text-align: center;
+    height: 100vh;
+    line-height: 10vh;
+    padding: 15vh;
+    border:3px solid red;
+}
+#Experience a:hover{
+    border: 2px solid red;
+}
+#Projects{
+    text-align: center;
+    border: 3px solid purple;
+    height: 100vh;
+    padding: 15vh;
+}
+#Projects .Box{
+    float: left;
+    border: 2px solid;
+    margin: 7px;
+    padding: 5vh;
+}
+#Projects .Box:hover{
+    border: 2px solid purple;
+}
+#Contact{
+    text-align: center;
+    border: 3px solid yellow;
+    height: 95vh;
+    padding: 10vh;
+}
+#Contact .Logos{
+    display: flex;
+}
+#Contact .Logos .Element{
+    margin: 10vh;
+    flex-grow: 1 1 0px;
+}
+#Contact .Logos .Element:hover{
+    border: 2px solid yellow;
+}
+#Contact .Resume:hover{
+    text-decoration:overline;
+    text-decoration-color: yellow;
+}
+.Footer{
+    height: 5vh;
+    text-align: center;
+    font-size: medium;
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: medium;
+        box-sizing: unset;
+        padding-left: 0%;
+        width: unset;
+    }
+    #Intro{
+        padding: unset;
+        padding-top: 40vh;
+        width: auto;
+        height: 59vh;
+        background-image: url('dead_cat.png');
+        background-color: white;
+        color: black;
+    }
+    #Skills .Gallery{
+        display: unset;
+        padding: unset;
+    }
+    #Skills{
+        padding: unset;
+        padding-top: 20vh;
+    }
+    #Experience{
+        padding: unset;
+        line-height: 5vh;
+        padding-top: 10vh;
+    }
+    #Projects{
+        padding: unset;
+        line-height: 5vh;
+        padding-top: 20vh;
+        height: 80vh;
+    }
+    #Projects .Box{
+        padding: unset;
+    }
+    #Contact{
+        padding: unset;
+        height: auto;
+    }
+    #Contact .Logos{
+        display: unset;
+    }
+    #Contact .Logos i{
+        font-size: 0.2vw;
+    }
+}
