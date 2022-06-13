@@ -2,16 +2,22 @@
     box-sizing: border-box;
     font-size:110%;
     margin: 0%;
-    background-color: black;
     color: aliceblue;
     font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
   }
 
 h3:hover{
     text-decoration:underline;
     text-decoration-color: red;
     text-decoration-thickness: 4px;
-}  
+}
+
+.Banner{
+    background-color: rgba(0, 0, 0, 0.819);
+    padding: 2vh;
+    z-index: 10;
+}
 
 #Intro{
     width: 100%;
@@ -19,9 +25,11 @@ h3:hover{
     border: 3px solid green;
     padding: 35vh;
     text-align: center;
-    background-image: url('alive_cat.png');
+    background-image: url('alive.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
+    z-index: 1;
 }
 #Intro h1:hover{
     font-size: larger;
@@ -33,6 +41,7 @@ h3:hover{
     padding: 20vh;
     height: 100vh;
     border: 3px solid blue;
+    background-color: black;
 }
 #Skills .Gallery{
     display: flex;
@@ -62,6 +71,8 @@ h3{
     line-height: 10vh;
     padding: 15vh;
     border:3px solid red;
+    background-color: black;
+
 }
 #Experience a:hover{
     border: 2px solid red;
@@ -71,6 +82,7 @@ h3{
     border: 3px solid purple;
     height: 100vh;
     padding: 15vh;
+    background-color: black;
 }
 #Projects .Box{
     float: left;
@@ -86,6 +98,7 @@ h3{
     border: 3px solid yellow;
     height: 95vh;
     padding: 10vh;
+    background-color: black;
 }
 #Contact .Logos{
     display: flex;
@@ -106,6 +119,7 @@ h3{
     text-align: center;
     font-size: medium;
     border: 1px solid white;
+    background-color: black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,9 +131,9 @@ h3{
     }
     #Intro{
         padding: unset;
-        padding-top: 40vh;
+        padding-top: 30vh;
         width: auto;
-        height: 59vh;
+        height: 69vh;
         background-image: url('dead_cat.png');
         background-color: white;
         color: black;
@@ -156,4 +170,35 @@ h3{
     #Contact .Logos i{
         font-size: 0.2vw;
     }
+}
+.floating-menu {
+    width: 130px;
+    z-index: 100;
+    background-color: transparent;
+    position: fixed;
+    bottom: 10vh;
+    right: 0px;
+    text-align: right;
+    font-size: 4vh;
+    padding-right: 2vw;
+}
+.floating-menu a, 
+.floating-menu h3 {
+    font-size: 0.9em;
+    display: block;
+    margin: 0 0.5em;
+    color: white;
+}
+.floating-menu a:link{
+    text-decoration: none;
+}
+.floating-menu .text{
+    display: none;
+}
+.floating-menu:hover{
+    font-size: 4.5vh;
+}
+.floating-menu:hover + .text{
+    display:block;
+    color: white;
 }
