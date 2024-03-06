@@ -5,6 +5,7 @@
     color: aliceblue;
     font-family: 'Merriweather', serif;
     scroll-behavior: smooth;
+    text-decoration: none;
   }
 
 h3:hover{
@@ -72,7 +73,6 @@ h3{
     padding: 15vh;
     border:3px solid red;
     background-color: black;
-
 }
 #Experience a:hover{
     border: 2px solid red;
@@ -85,38 +85,46 @@ h3{
     background-color: black;
 }
 #Projects .Box{
-    float: left;
-    border: 2px solid;
+    float: center;
+    /* text-decoration:underline; */
     margin: 7px;
-    padding: 5vh;
+    padding: 2vh;
 }
 #Projects .Box:hover{
-    border: 2px solid purple;
+    text-decoration:underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 4px;
 }
 #Contact{
     text-align: center;
     border: 3px solid yellow;
-    height: 95vh;
-    padding: 10vh;
+    height: 100vh;
+    padding: 15vh;
     background-color: black;
 }
 #Contact .Logos{
     display: flex;
 }
 #Contact .Logos .Element{
+    position:sticky;
+    width: 50%;
     margin: 10vh;
     flex-grow: 1 1 0px;
 }
 #Contact .Logos .Element:hover{
-    border: 2px solid yellow;
+    /* text-decoration: underline;
+    text-decoration-color: yellow; */
+    background-color: rgba(255, 255, 0, 0.144);
 }
+
 #Contact .Resume:hover{
-    text-decoration:overline;
+    text-decoration:underline;
     text-decoration-color: yellow;
 }
 .Footer{
-    height: 5vh;
+    height: 6vh;
     text-align: center;
+    padding-top: 1vh;
     font-size: medium;
     border: 1px solid white;
     background-color: black;
@@ -128,6 +136,7 @@ h3{
         box-sizing: unset;
         padding-left: 0%;
         width: unset;
+        margin: auto;
     }
     #Intro{
         padding: unset;
@@ -149,7 +158,7 @@ h3{
     #Experience{
         padding: unset;
         line-height: 5vh;
-        padding-top: 10vh;
+        padding-top: 25vh;
     }
     #Projects{
         padding: unset;
@@ -162,6 +171,7 @@ h3{
     }
     #Contact{
         padding: unset;
+        padding-top: 15vh;
         height: auto;
     }
     #Contact .Logos{
@@ -169,6 +179,10 @@ h3{
     }
     #Contact .Logos i{
         font-size: 0.2vw;
+    }
+    .Footer{
+        padding: unset;
+        padding-top: 10%;
     }
 }
 .floating-menu {
